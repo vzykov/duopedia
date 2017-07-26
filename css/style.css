@@ -45,3 +45,10 @@ form {
   
   text-align:center;
 }
+
+#landing-footer {
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  padding:20px;
+}
