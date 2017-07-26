@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Duopedia: The Bilingual Wikipedia Browser</title>
+
+
+
+
+        <link rel="stylesheet" href="css/style.css">
+
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+
+
+  </head>
+
+  <body>
+
+    <div id="pane0" class="pane"></div>
+    <div id="pane1" class="pane"></div>
+
+    <div id="landing">
+		<h1 class="landinghead">Duopedia</h1>
+		<h2 class="landinghead">The Bilingual Wikipedia Browser</h2>
+		<form action="#">
+			<input type="text" id="articleinput" name="article" value="">
+			<input type="hidden" name="pane" value="1">
+			<select name="l1" id="l1select">
+				<option value="en">English</option>
+				<option value="de">Deutsch</option>
+				<option value="ru">&#x420;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;</option>
+				<option value="it">Italiano</option>
+				<option value="zh">&#x4E2D;&#x6587;</option>
+				<option value="es">Espa&#xF1;ol</option>
+				<option value="ja">&#x65E5;&#x672C;&#x8A9E;</option>
+				<option value="fr">Fran&#xE7;ais</option>
+				<option value="pt">Portugu&#xEA;s</option>
+				<option value="pl">Polski</option>
+				<option value="nl">Nederlands</option>
+				<option value="sv">Svenska</option>
+				<option value="vi">Ti&#x1EBF;ng Vi&#x1EC7;t</option>
+				<option value="ar">&#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;</option>
+				<option value="seb">Sinugboanong Binisaya</option>
+				<option value="el">&#x395;&#x3BB;&#x3BB;&#x3B7;&#x3BD;&#x3B9;&#x3BA;&#x3AC;</option>
+				<option value="tr">T&#xFC;rk&#xE7;e</option>
+				<option value="fa">&#x641;&#x627;&#x631;&#x633;&#x6CC;</option>
+				<option value="hu">Magyar</option>
+				<option value="ro">Rom&#xE2;n&#x103;</option>
+				<option value="da">Dansk</option>
+				<option value="no">Norsk</option>
+				<option value="fi">Suomi</option>
+				<option value="ko">&#xD55C;&#xAD6D;&#xC5B4;</option>
+				<option value="pt">Portugu&#xEA;s</option>
+				<option value="id">Bahasa Indonesia</option>
+				<option value="he">&#x5E2;&#x5D1;&#x5E8;&#x5D9;&#x5EA;</option>
+				<option value="ur">&#x627;&#x631;&#x62F;&#x648;</option>
+				<option value="hi">&#x939;&#x93F;&#x928;&#x94D;&#x926;&#x940;</option>
+				<option value="uk">&#x423;&#x43A;&#x440;&#x430;&#x457;&#x43D;&#x441;&#x44C;&#x43A;&#x430;</option>
+				<option value="sw">Kiswahili</option>
+				<option value="am">&#x12A0;&#x121B;&#x122D;&#x129B;</option>
+				<option value="eo">Esperanto</option>
+			</select>
+			<select name="l2" id="l2select">
+				<option value="en">English</option>
+				<option value="de">Deutsch</option>
+				<option value="ru">&#x420;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;</option>
+				<option value="it">Italiano</option>
+				<option value="zh">&#x4E2D;&#x6587;</option>
+				<option value="es">Espa&#xF1;ol</option>
+				<option value="ja">&#x65E5;&#x672C;&#x8A9E;</option>
+				<option value="fr">Fran&#xE7;ais</option>
+				<option value="pt">Portugu&#xEA;s</option>
+				<option value="pl">Polski</option>
+				<option value="nl">Nederlands</option>
+				<option value="sv">Svenska</option>
+				<option value="vi">Ti&#x1EBF;ng Vi&#x1EC7;t</option>
+				<option value="ar">&#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;</option>
+				<option value="seb">Sinugboanong Binisaya</option>
+				<option value="el">&#x395;&#x3BB;&#x3BB;&#x3B7;&#x3BD;&#x3B9;&#x3BA;&#x3AC;</option>
+				<option value="tr">T&#xFC;rk&#xE7;e</option>
+				<option value="fa">&#x641;&#x627;&#x631;&#x633;&#x6CC;</option>
+				<option value="hu">Magyar</option>
+				<option value="ro">Rom&#xE2;n&#x103;</option>
+				<option value="da">Dansk</option>
+				<option value="no">Norsk</option>
+				<option value="fi">Suomi</option>
+				<option value="ko">&#xD55C;&#xAD6D;&#xC5B4;</option>
+				<option value="pt">Portugu&#xEA;s</option>
+				<option value="id">Bahasa Indonesia</option>
+				<option value="he">&#x5E2;&#x5D1;&#x5E8;&#x5D9;&#x5EA;</option>
+				<option value="ur">&#x627;&#x631;&#x62F;&#x648;</option>
+				<option value="hi">&#x939;&#x93F;&#x928;&#x94D;&#x926;&#x940;</option>
+				<option value="uk">&#x423;&#x43A;&#x440;&#x430;&#x457;&#x43D;&#x441;&#x44C;&#x43A;&#x430;</option>
+				<option value="sw">Kiswahili</option>
+				<option value="am">&#x12A0;&#x121B;&#x122D;&#x129B;</option>
+				<option value="eo">Esperanto</option>
+			</select>
+
+			<input type="submit" value="search">
+		</form>
+    </div>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script src="js/index.js"></script>
+
+  </body>
+</html>
